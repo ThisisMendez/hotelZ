@@ -22,7 +22,7 @@ const userSchema = new Schema({
         type: String,
         min: [4, 'Too short, min is 4 characters'],
         max: [32, 'Too long, max is 32 characters'],
-        // required: 'Password is required'
+
     },
     rentals: [{ type: Schema.Types.ObjectId, ref: 'Rental' }],
     bookings: [{type: Schema.Types.ObjectId, ref: 'Booking'}]
